@@ -10,7 +10,7 @@ import UIKit
 class WalkThroughViewController: UIViewController {
     
     //MARK: - IBOutlet
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     var slides: [WalkThroughSlide] = []
@@ -26,21 +26,21 @@ class WalkThroughViewController: UIViewController {
             WalkThroughSlide(title: "Buy plants and accessories ", description: "Wide variety of plants are available for you", image: #imageLiteral(resourceName: "Next Button")),
             WalkThroughSlide(title: "Buy plants and accessories ", description: "Wide variety of plants are available for you", image: #imageLiteral(resourceName: "Next Button"))
         ]
-
+        
         
     }
- 
+    
     //MARK: - Next Button Function
     @IBAction func nextButtonClicked(_ sender: Any) {
         if currentPage == slides.count - 1{
-            let controller = storyboard?.instantiateViewController(identifier: "MainVC") as! ViewController
+            let controller = storyboard?.instantiateViewController(identifier: Constants.Storyboard.MainViewController) as! ViewController
             controller.modalPresentationStyle = .fullScreen
-           present(controller, animated: true, completion: nil)
+            present(controller, animated: true, completion: nil)
             
         }else{
-        currentPage += 1
-        let indexPath = IndexPath(item: currentPage, section: 0)
-        collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+            currentPage += 1
+            let indexPath = IndexPath(item: currentPage, section: 0)
+            collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         }
     }
 }
@@ -51,7 +51,7 @@ extension WalkThroughViewController: UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.identifier.WalkThroughCell, for: indexPath) as! WalkThroughCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.Storyboard.WalkThroughCell, for: indexPath) as! WalkThroughCollectionViewCell
         cell.setup(slides[indexPath.row])
         return cell
     }

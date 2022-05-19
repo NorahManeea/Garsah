@@ -8,7 +8,8 @@
 import Foundation
 
 struct Constants {
-    struct identifier{
+    struct Storyboard{
         static let WalkThroughCell = "WalkThroughCollectionViewCell"
+        static let MainViewController = "MainVC"
     }
 }
