@@ -16,6 +16,10 @@
 		0C7DD29F28353EB7007F6069 /* GarsahTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7DD29E28353EB7007F6069 /* GarsahTests.swift */; };
 		0C7DD2A928353EB8007F6069 /* GarsahUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7DD2A828353EB8007F6069 /* GarsahUITests.swift */; };
 		0C7DD2AB28353EB8007F6069 /* GarsahUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7DD2AA28353EB8007F6069 /* GarsahUITestsLaunchTests.swift */; };
+		0C8B060F2837C70500B308A9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8B060E2837C70500B308A9 /* Login.storyboard */; };
+		0C8B06112837C75D00B308A9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B06102837C75D00B308A9 /* LoginViewController.swift */; };
+		0C8B06132837C76D00B308A9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B06122837C76D00B308A9 /* SignUpViewController.swift */; };
+		0C8B06162837C7CF00B308A9 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8B06152837C7CF00B308A9 /* SignUp.storyboard */; };
 		0CB780522836553100C6EC67 /* WalkThroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB780512836553100C6EC67 /* WalkThroughViewController.swift */; };
 		0CB78054283655FF00C6EC67 /* WalkThroughSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB78053283655FF00C6EC67 /* WalkThroughSlide.swift */; };
 		0CB780582836584C00C6EC67 /* WalkThroughCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB780572836584C00C6EC67 /* WalkThroughCollectionViewCell.swift */; };
@@ -53,6 +57,10 @@
 		0C7DD2A428353EB8007F6069 /* GarsahUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GarsahUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C7DD2A828353EB8007F6069 /* GarsahUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarsahUITests.swift; sourceTree = "<group>"; };
 		0C7DD2AA28353EB8007F6069 /* GarsahUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarsahUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0C8B060E2837C70500B308A9 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		0C8B06102837C75D00B308A9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0C8B06122837C76D00B308A9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		0C8B06152837C7CF00B308A9 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		0CB780512836553100C6EC67 /* WalkThroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughViewController.swift; sourceTree = "<group>"; };
 		0CB78053283655FF00C6EC67 /* WalkThroughSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughSlide.swift; sourceTree = "<group>"; };
 		0CB780572836584C00C6EC67 /* WalkThroughCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -149,6 +157,7 @@
 				0C7DD28D28353EB5007F6069 /* Main.storyboard */,
 				0C7DD29028353EB7007F6069 /* Assets.xcassets */,
 				0C7DD29228353EB7007F6069 /* LaunchScreen.storyboard */,
+				0C8B06172837C8AD00B308A9 /* Registration */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,8 +167,27 @@
 			children = (
 				0C7DD28B28353EB5007F6069 /* ViewController.swift */,
 				0CB780562836582700C6EC67 /* WalkThrough */,
+				0C8B06142837C77400B308A9 /* Registration */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		0C8B06142837C77400B308A9 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				0C8B06102837C75D00B308A9 /* LoginViewController.swift */,
+				0C8B06122837C76D00B308A9 /* SignUpViewController.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		0C8B06172837C8AD00B308A9 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				0C8B060E2837C70500B308A9 /* Login.storyboard */,
+				0C8B06152837C7CF00B308A9 /* SignUp.storyboard */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 		0CB780552836560300C6EC67 /* Model */ = {
@@ -292,8 +320,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C7DD29428353EB7007F6069 /* LaunchScreen.storyboard in Resources */,
+				0C8B060F2837C70500B308A9 /* Login.storyboard in Resources */,
 				0C7DD29128353EB7007F6069 /* Assets.xcassets in Resources */,
 				0C7DD28F28353EB5007F6069 /* Main.storyboard in Resources */,
+				0C8B06162837C7CF00B308A9 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +352,9 @@
 				0CB780522836553100C6EC67 /* WalkThroughViewController.swift in Sources */,
 				0C7DD28828353EB5007F6069 /* AppDelegate.swift in Sources */,
 				0CB780582836584C00C6EC67 /* WalkThroughCollectionViewCell.swift in Sources */,
+				0C8B06112837C75D00B308A9 /* LoginViewController.swift in Sources */,
 				0CB7805A28365B4700C6EC67 /* Constants.swift in Sources */,
+				0C8B06132837C76D00B308A9 /* SignUpViewController.swift in Sources */,
 				0C7DD28A28353EB5007F6069 /* SceneDelegate.swift in Sources */,
 				0CB78054283655FF00C6EC67 /* WalkThroughSlide.swift in Sources */,
 			);

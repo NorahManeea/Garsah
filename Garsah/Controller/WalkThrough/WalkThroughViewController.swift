@@ -22,9 +22,9 @@ class WalkThroughViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         slides = [
-            WalkThroughSlide(title: "Buy plants and accessories ", description: "Wide variety of plants are available for you", image: #imageLiteral(resourceName: "Next Button")),
-            WalkThroughSlide(title: "Buy plants and accessories ", description: "Wide variety of plants are available for you", image: #imageLiteral(resourceName: "Next Button")),
-            WalkThroughSlide(title: "Buy plants and accessories ", description: "Wide variety of plants are available for you", image: #imageLiteral(resourceName: "Next Button"))
+            WalkThroughSlide(title: "Welcome to Garsah App ", description: "Where You find your favorite plants", image: #imageLiteral(resourceName: "undraw_nature_m5ll")),
+            WalkThroughSlide(title: "Buy plants and accessories ", description: "Wide variety of plants are available for you", image: #imageLiteral(resourceName: "undraw_nature_on_screen_xkli")),
+            WalkThroughSlide(title: "Product Delivery ", description: "Your products is delivered to your home", image: #imageLiteral(resourceName: "undraw_Delivery_address_re_cjca"))
         ]
         
         

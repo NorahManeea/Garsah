@@ -10,6 +10,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Login-->
+        <scene sceneID="Vwd-9J-JMi">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Login" storyboardName="Login" id="uBn-MB-GmL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MOP-GE-mle"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CVF-ug-Py5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-825" y="91"/>
+        </scene>
+        <!--SignUp-->
+        <scene sceneID="4Kg-k6-oXe">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SignUp" storyboardName="SignUp" id="nwb-o6-gS8" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="uLr-IS-l1e"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uHc-Gz-Bzh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-833" y="243"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -49,6 +69,9 @@
                                                         <integer key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="uBn-MB-GmL" kind="show" id="zVJ-jn-nn0"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENe-ni-uTT">
                                                 <rect key="frame" x="0.0" y="54" width="268" height="39"/>
@@ -73,6 +96,9 @@
                                                         <integer key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="nwb-o6-gS8" kind="show" id="ehl-mS-hTE"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kl9-GL-72x">
                                                 <rect key="frame" x="0.0" y="108" width="268" height="31"/>
@@ -132,9 +158,9 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dhx-0x-9X0">
-                                                    <rect key="frame" x="0.0" y="59" width="414" height="422"/>
+                                                    <rect key="frame" x="20" y="59" width="374" height="422"/>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Cl2-L2-K3o">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Cl2-L2-K3o">
                                                     <rect key="frame" x="22" y="541" width="322.5" height="66.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buy plants and accessories " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxf-Z6-d16">
@@ -144,21 +170,30 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wide variety of plants are available for you" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufJ-sw-wt9">
-                                                            <rect key="frame" x="1" y="46" width="321" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="46" width="322.5" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" name="Text"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="ufJ-sw-wt9" secondAttribute="trailing" id="Ewo-4a-ZP5"/>
+                                                        <constraint firstItem="vxf-Z6-d16" firstAttribute="leading" secondItem="Cl2-L2-K3o" secondAttribute="leading" id="YxI-pa-Cag"/>
+                                                        <constraint firstItem="ufJ-sw-wt9" firstAttribute="leading" secondItem="Cl2-L2-K3o" secondAttribute="leading" id="bZ1-Gn-rFT"/>
+                                                        <constraint firstAttribute="trailing" secondItem="vxf-Z6-d16" secondAttribute="trailing" id="fSQ-GI-6wk"/>
+                                                        <constraint firstItem="vxf-Z6-d16" firstAttribute="top" secondItem="Cl2-L2-K3o" secondAttribute="top" id="oEi-Lv-AM8"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ufJ-sw-wt9" secondAttribute="bottom" id="rCD-nJ-WvC"/>
+                                                        <constraint firstItem="ufJ-sw-wt9" firstAttribute="top" secondItem="vxf-Z6-d16" secondAttribute="bottom" constant="16" id="rhh-cu-dhQ"/>
+                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Dhx-0x-9X0" secondAttribute="trailing" constant="20" symbolic="YES" id="36h-EM-3Rc"/>
                                                 <constraint firstAttribute="bottom" secondItem="Cl2-L2-K3o" secondAttribute="bottom" constant="65.5" id="6ED-c5-1uJ"/>
-                                                <constraint firstItem="Dhx-0x-9X0" firstAttribute="top" secondItem="Fwe-bD-dgQ" secondAttribute="top" constant="59" id="7Ra-BT-uW4"/>
-                                                <constraint firstAttribute="trailing" secondItem="Dhx-0x-9X0" secondAttribute="trailing" id="BeT-Tp-RN3"/>
                                                 <constraint firstItem="Cl2-L2-K3o" firstAttribute="leading" secondItem="Fwe-bD-dgQ" secondAttribute="leading" constant="22" id="IH4-1y-C8S"/>
-                                                <constraint firstItem="Dhx-0x-9X0" firstAttribute="leading" secondItem="Fwe-bD-dgQ" secondAttribute="leading" id="PDK-Jj-ye2"/>
-                                                <constraint firstItem="Cl2-L2-K3o" firstAttribute="top" secondItem="Dhx-0x-9X0" secondAttribute="bottom" constant="60" id="zgH-f7-eha"/>
+                                                <constraint firstItem="Dhx-0x-9X0" firstAttribute="top" secondItem="Fwe-bD-dgQ" secondAttribute="top" constant="59" id="Ly7-3x-Rjz"/>
+                                                <constraint firstItem="Dhx-0x-9X0" firstAttribute="leading" secondItem="Fwe-bD-dgQ" secondAttribute="leading" constant="20" symbolic="YES" id="Zv1-tR-Bve"/>
+                                                <constraint firstItem="Cl2-L2-K3o" firstAttribute="top" secondItem="Dhx-0x-9X0" secondAttribute="bottom" constant="60" id="mkI-Xz-tUZ"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="673"/>
@@ -212,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkB-IY-koo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="701" y="92"/>
+            <point key="canvasLocation" x="698.55072463768124" y="91.741071428571431"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2ia-o4-3Ut">
@@ -234,10 +269,10 @@
         <image name="2 (2)" width="390" height="844"/>
         <image name="Next Button" width="45" height="45"/>
         <namedColor name="SecondaryColor">
-            <color red="1" green="0.75294117647058822" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.75300002098083496" blue="0.3449999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Text">
-            <color red="0.5490196078431373" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.54900002479553223" green="0.54900002479553223" blue="0.54900002479553223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
