@@ -31,6 +31,7 @@
 		0CB78054283655FF00C6EC67 /* WalkThroughSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB78053283655FF00C6EC67 /* WalkThroughSlide.swift */; };
 		0CB780582836584C00C6EC67 /* WalkThroughCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB780572836584C00C6EC67 /* WalkThroughCollectionViewCell.swift */; };
 		0CB7805A28365B4700C6EC67 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB7805928365B4700C6EC67 /* Constants.swift */; };
+		0CE99DAF2837EB4D00048DEB /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE99DAE2837EB4D00048DEB /* TextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		0CB78053283655FF00C6EC67 /* WalkThroughSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughSlide.swift; sourceTree = "<group>"; };
 		0CB780572836584C00C6EC67 /* WalkThroughCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughCollectionViewCell.swift; sourceTree = "<group>"; };
 		0CB7805928365B4700C6EC67 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0CE99DAE2837EB4D00048DEB /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				0CB7805928365B4700C6EC67 /* Constants.swift */,
+				0CE99DAE2837EB4D00048DEB /* TextField.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				0C7DD28C28353EB5007F6069 /* ViewController.swift in Sources */,
 				0CB780522836553100C6EC67 /* WalkThroughViewController.swift in Sources */,
 				0C7DD28828353EB5007F6069 /* AppDelegate.swift in Sources */,
+				0CE99DAF2837EB4D00048DEB /* TextField.swift in Sources */,
 				0CB780582836584C00C6EC67 /* WalkThroughCollectionViewCell.swift in Sources */,
 				0C8B06112837C75D00B308A9 /* LoginViewController.swift in Sources */,
 				0CB7805A28365B4700C6EC67 /* Constants.swift in Sources */,

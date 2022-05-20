@@ -9,21 +9,42 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var signupButton: UIButton!
+    @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        SetUp()
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func SetUp(){
+        //Hide Error Label and activityInd
+        errorLabel.alpha = 0
+        activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
+        //Style Elements
+        TextField.styleTextField(nameTextField)
+        TextField.styleTextField(emailTextField)
+        TextField.styleTextField(passwordTextField)
+        TextField.styleButton(signupButton)
     }
-    */
-
+    
+    //MARK: - TextField Function
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == nameTextField{
+            emailTextField.becomeFirstResponder()
+        }else if textField == emailTextField{
+            passwordTextField.becomeFirstResponder()
+        }else{
+            view.endEditing(true)
+        }
+        return true
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
 }
